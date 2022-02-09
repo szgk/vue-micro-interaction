@@ -2,7 +2,7 @@
 
 Micro interaction library with vue.
 
-[DEMO](https://szgk.github.io/vue-micro-interaction/)
+[DEMO](https://szgk.github.io/vue-micro-interaction/docs/)
 
 ## Instalation
 
