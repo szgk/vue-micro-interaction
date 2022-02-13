@@ -13,5 +13,8 @@ export default {
     Vue.component('v-micro-hover-sticky', _HoverSticky)
     Vue.component('v-micro-ripples', _Ripples)
     Vue.component('v-micro-shake', _Shake)
+    Vue.component('MicroHoverSticky', _HoverSticky)
+    Vue.component('MicroRipples', _Ripples)
+    Vue.component('MicroShake', _Shake)
   }
 }

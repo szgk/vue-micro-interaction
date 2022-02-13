@@ -13,13 +13,13 @@
     <section class="component">
       <h2 class="sectionTitle" id="HoverSticky"># Hover Sticky</h2>
       <div class="sticky-container">
-        <v-micro-hover-sticky
+        <MicroHoverSticky
           class="sticky-wrapper"
           :duration="stickyDurasion"
           :strength="stickyStrength"
         >
           <div class="v-micro-hover-sticky">hover</div>
-        </v-micro-hover-sticky>
+        </MicroHoverSticky>
       </div>
       <div class="flexRange">
         <div>
@@ -39,12 +39,12 @@
           :size="ripplesSize"
           :duration="ripplesDuration"
         >click !</Ripples>
-        <v-micro-ripples
+        <MicroRipples
           class="v-micro-ripples"
           :size="ripplesSize"
           :duration="ripplesDuration"
           :color="'rgba(255, 255, 255, 0.5)'"
-          >click !</v-micro-ripples>
+          >click !</MicroRipples>
       </div>
       <div class="flexRange">
         <div>
@@ -66,12 +66,12 @@
           :range="{x: shakeRange, y: 0, z: 0}"
           :duration="shakeDurasion"
         >X</Shake>
-        <v-micro-shake
+        <MicroShake
           class="v-micro-shake"
           :iteration="shakeIteration"
           :range="{x: 0, y: shakeRange, z: 0}"
           :duration="shakeDurasion"
-        >Y</v-micro-shake>
+        >Y</MicroShake>
         <v-micro-shake
           class="v-micro-shake"
           :iteration="shakeIteration"
