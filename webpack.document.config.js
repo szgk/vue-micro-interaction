@@ -3,6 +3,7 @@ const webpack = require("webpack")
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, argv) => {
 
@@ -15,6 +16,7 @@ module.exports = (env, argv) => {
     new webpack.DefinePlugin({
       WEBPACK_MODE: JSON.stringify(argv.mode),
     }),
+    new MiniCssExtractPlugin(),
   ]
 
   // clear docs/ dir, only when building.
@@ -65,7 +67,7 @@ module.exports = (env, argv) => {
         {
           test: /\.styl(us)?$/,
           use: [
-            'vue-style-loader',
+            MiniCssExtractPlugin.loader,
             'css-loader',
             'stylus-loader',
           ]
@@ -73,7 +75,7 @@ module.exports = (env, argv) => {
         {
           test: /\.css$/,
           use: [
-            'vue-style-loader',
+            MiniCssExtractPlugin.loader,
             'css-loader',
           ]
         },
