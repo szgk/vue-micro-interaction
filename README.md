@@ -1,8 +1,10 @@
-## Vue Micro Interaction
+<img src="https://github.com/szgk/vue-micro-interaction/blob/master/img/logo.png" alt="ripples" width="300"/>
+
+## Vue Micro-Interaction(β)
 
 Micro interaction library with vue.
 
-[DEMO](https://szgk.github.io/vue-micro-interaction/docs/)
+[Document](https://szgk.github.io/vue-micro-interaction/docs/)
 
 ## Instalation
 

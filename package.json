@@ -1,5 +1,12 @@
 {
   "name": "vue-micro-interaction",
+  "description": "micro interation library with vue.",
+  "keywords": [
+    "vue",
+    "microinteraction",
+    "ui"
+  ],
+  "homepage": "https://szgk.github.io/vue-micro-interaction/docs/",
   "version": "0.0.1",
   "main": "dist/index.js",
   "license": "MIT",
