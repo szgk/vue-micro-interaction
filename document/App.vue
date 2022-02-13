@@ -1,6 +1,9 @@
 <template>
 <div class="conttainer">
-  <h1>Vue Micro Interaction</h1>
+  <header class="header">
+    <img class="logo" src="./img/vue-micro-interaction.svg" alt="vue-micro-interaction"/>
+    <h1>Vue Micro Interaction(β)</h1>
+  </header>
   <section>
     <h2>Hover Sticky</h2>
     <div class="sticky-container">
@@ -130,22 +133,28 @@ export default {
   }
 }
 </script>
-<style>
-h2 {
+<style lang="stylus">
+.header
+  display: flex;
+
+.logo
+  width: 40px;
+
+h2
   font-weight: 100;
-}
-.conttainer {
+
+.conttainer
   padding: 0 20px 20px 20px;
-}
-.sticky-container {
+
+.sticky-container
   display: inline-block;
   border: dashed 1px #000;
   margin-bottom: 20px;
-}
-.sticky-wrapper {
+
+.sticky-wrapper
   padding: 40px;
-}
-.v-micro-hover-sticky {
+
+.v-micro-hover-sticky
   display: inline-block;
   padding: 10px;
   background: #88f;
@@ -153,8 +162,8 @@ h2 {
   color: #fff;
   text-align: center;
   cursor: pointer;
-}
-.v-micro-ripples {
+
+.v-micro-ripples
   width: 200px;
   height: 200px;
   line-height: 200px;
@@ -162,13 +171,13 @@ h2 {
   color: #fff;
   text-align: center;
   cursor: pointer;
-}
-.v-micro-ripples + .v-micro-ripples {
-  margin-left: 20px;
-  background: #f80;
-}
 
-.v-micro-shake {
+  & + &
+    margin-left: 20px;
+    background: #f80;
+
+
+.v-micro-shake
   display: inline-block;
   padding: 0 10px;
   width: 40px;
@@ -180,30 +189,26 @@ h2 {
   color: #fff;
   text-align: center;
   cursor: pointer;
-}
-.v-micro-shake + .v-micro-shake {
-  margin-left: 20px;
-  background: #f56;
-}
-.v-micro-shake + .v-micro-shake + .v-micro-shake {
-  margin-left: 20px;
-  background: #f58;
-}
-.flex {
+
+  & + &
+    margin-left: 20px;
+    background: #f56;
+
+.flex
   display: flex;
   margin-bottom: 20px;
-}
-.flexRange {
+
+.flexRange
   display: flex;
   margin-bottom: 20px;
-}
-.flexRange div{
+
+.flexRange div
   margin-right: 20px;
-}
-section {
+
+section
   margin-bottom: 30px;
-}
-p {
+
+p
   margin: 0;
-}
+
 </style>

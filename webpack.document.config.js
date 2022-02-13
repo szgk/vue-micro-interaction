@@ -35,6 +35,7 @@ module.exports = (env, argv) => {
     entry: './document/app.js',
     output: {
       path: path.resolve(__dirname, "docs"),
+      assetModuleFilename: "img/[name][ext]",
       libraryTarget: 'umd',
       filename: (pathData) => {
         return pathData.chunk.name === 'main' ? 'app.js' : '[name].js';
@@ -62,6 +63,14 @@ module.exports = (env, argv) => {
           loader: 'vue-loader',
         },
         {
+          test: /\.styl(us)?$/,
+          use: [
+            'vue-style-loader',
+            'css-loader',
+            'stylus-loader',
+          ]
+        },
+        {
           test: /\.css$/,
           use: [
             'vue-style-loader',
@@ -81,6 +90,10 @@ module.exports = (env, argv) => {
             loader: 'html-loader',
           }
         },
+        {
+          test: /\.(ico|svg|jpe?g|png)$/,
+          type: "asset/resource",
+        }
       ]
     },
     resolve: {
