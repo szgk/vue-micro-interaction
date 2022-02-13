@@ -90,7 +90,7 @@
 <script>
 import {HoverSticky, Ripples, Shake} from '..'
 export default {
-  name: 'Sample',
+  name: 'document',
   data(){return {
     stickyStrength: 1,
     stickyDurasion: 0.1,

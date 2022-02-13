@@ -4,15 +4,17 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve --config ./webpack.sample.config.js",
-    "docs": "serve docs",
+    "document": "webpack serve --config=./webpack.document.config.js --mode=development",
+    "document:dist": "webpack serve --config=./webpack.document.config.js --mode=production",
+    "document:prod": "serve docs",
     "build": "webpack",
-    "build:sample": "webpack --config ./webpack.sample.config.js"
+    "build:document": "webpack --config ./webpack.document.config.js  --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.6.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",

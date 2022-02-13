@@ -1,6 +1,6 @@
 const path = require('path')
 const {VueLoaderPlugin} = require('vue-loader')
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -10,13 +10,6 @@ module.exports = {
     libraryTarget: 'umd',
     filename: 'index.js',
     globalObject: 'typeof self !== \'undefined\' ? self : this'
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "sample"),
-    },
-    compress: true,
-    port: 9000,
   },
   module: {
     rules: [
@@ -48,9 +41,13 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, '/src', 'index.html'),
-    //   inject: 'body',
-    // })
+    new CleanWebpackPlugin({
+      // Write Logs to Console
+      verbose: true,
+      // Automatically remove all unused webpack assets on rebuild
+      cleanStaleWebpackAssets: true,
+      // Do not allow removal of current webpack assets
+      protectWebpackAssets: true,
+    }),
   ]
 }
