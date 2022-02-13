@@ -1,4 +1,4 @@
-<img src="https://github.com/szgk/vue-micro-interaction/blob/master/img/logo.png" alt="ripples" width="300"/>
+<img src="https://github.com/szgk/vue-micro-interaction/blob/master/img/logo.png" alt="logo" width="300"/>
 
 ## Vue Micro-Interaction(β)
 
