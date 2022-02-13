@@ -135,80 +135,79 @@ export default {
 </script>
 <style lang="stylus">
 .header
-  display: flex;
+  display flex
 
 .logo
-  width: 40px;
+  width 40px
 
 h2
-  font-weight: 100;
+  font-weight 100
 
 .conttainer
-  padding: 0 20px 20px 20px;
+  padding 0 20px 20px 20px
 
 .sticky-container
-  display: inline-block;
-  border: dashed 1px #000;
-  margin-bottom: 20px;
+  display inline-block
+  border dashed 1px #000
+  margin-bottom 20px
 
 .sticky-wrapper
-  padding: 40px;
+  padding 40px
 
 .v-micro-hover-sticky
-  display: inline-block;
-  padding: 10px;
-  background: #88f;
-  border-radius: 20px;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
+  display inline-block
+  padding 10px
+  background #88f
+  border-radius 20px
+  color #fff
+  text-align center
+  cursor pointer
 
 .v-micro-ripples
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  background: #888;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
+  width 200px
+  height 200px
+  line-height 200px
+  background #888
+  color #fff
+  text-align center
+  cursor pointer
 
   & + &
-    margin-left: 20px;
-    background: #f80;
-
+    margin-left 20px
+    background #f80
 
 .v-micro-shake
-  display: inline-block;
-  padding: 0 10px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  background: #f88;
-  border-radius: 20px;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
+  display inline-block
+  padding 0 10px
+  width 40px
+  height 40px
+  line-height 40px
+  border-radius 50%
+  background #f88
+  border-radius 20px
+  color #fff
+  text-align center
+  cursor pointer
 
   & + &
-    margin-left: 20px;
-    background: #f56;
+    margin-left 20px
+    background #f56
 
 .flex
-  display: flex;
-  margin-bottom: 20px;
+  display flex
+  margin-bottom 20px
 
 .flexRange
-  display: flex;
-  margin-bottom: 20px;
+  display flex
+  margin-bottom 20px
 
 .flexRange div
-  margin-right: 20px;
+  margin-right 20px
 
 section
-  margin-bottom: 30px;
+  margin-bottom 30px
 
 p
-  margin: 0;
+  margin 0
 
 </style>
