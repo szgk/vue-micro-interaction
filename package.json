@@ -7,7 +7,7 @@
     "ui"
   ],
   "homepage": "https://szgk.github.io/vue-micro-interaction/docs/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
