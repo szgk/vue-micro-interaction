@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import app from './App.vue'
+import './styles/reset.css'
 
 const init = async () => {
   let vueMicroInteraction = null
